@@ -8,10 +8,38 @@
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
     <title>FLORES</title>
 </head>
+<style>
+  .name-tag {
+      color: #fff;
+      font-size: 3rem; /* Ajusta el tamaño según necesites */
+      text-align: center;
+      position: absolute;
+      top: 10%; /* Ajusta la posición según necesites */
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1000; /* Asegúrate de que sea más alto que el de otros elementos */
+      animation: glow 2.5s ease-in-out infinite;
+  }
+
+  @keyframes glow {
+      0%, 100% {
+          color: #fff;
+          text-shadow: 0 0 12px #fbff00, 0 0 20px #fbff00, 0 0 100px #fbff00;
+      }
+      50% {
+          color: #696565;
+          text-shadow: none;
+      }
+  }
+</style>
+
 
 <body class="container">
     <div class="night"></div>
     <div class="flowers">
+
+
+      
       <div class="flower flower--1">
         <div class="flower__leafs flower__leafs--1">
           <div class="flower__leaf flower__leaf--1"></div>
@@ -92,6 +120,9 @@
         </div>
       </div>
   
+
+
+
       <div class="grow-ans" style="--d:1.2s">
         <div class="flower__g-long">
           <div class="flower__g-long__top"></div>
@@ -131,6 +162,24 @@
         </div>
       </div>
   
+
+
+<!-- Pasto a la derecha -->
+<div class="flower__grass flower__grass--right">
+  <div class="flower__grass--top"></div>
+  <div class="flower__grass--bottom"></div>
+  <div class="flower__grass__leaf flower__grass__leaf--1"></div>
+  <div class="flower__grass__leaf flower__grass__leaf--2"></div>
+  <div class="flower__grass__leaf flower__grass__leaf--3"></div>
+  <div class="flower__grass__leaf flower__grass__leaf--4"></div>
+  <div class="flower__grass__leaf flower__grass__leaf--5"></div>
+  <div class="flower__grass__leaf flower__grass__leaf--6"></div>
+  <div class="flower__grass__leaf flower__grass__leaf--7"></div>
+  <div class="flower__grass__leaf flower__grass__leaf--8"></div>
+  <div class="flower__grass__overlay"></div>
+</div>
+
+
       <div class="grow-ans" style="--d:2.4s">
         <div class="flower__g-right flower__g-right--1">
           <div class="leaf"></div>
@@ -172,7 +221,7 @@
           <div class="flower__g-front__line"></div>
         </div>
       </div>
-  
+      
       <div class="grow-ans" style="--d:3.2s">
         <div class="flower__g-fr">
           <div class="leaf"></div>
@@ -307,6 +356,16 @@
         </div>
       </div>
     </div>
+
+
+    
+<!-- Luciérnagas (emojis de corazón) -->
+<div class="luciernaga" style="left: 10%; top: 20%;">💖</div>
+<div class="luciernaga" style="left: 80%; top: 40%;">💖</div>
+<!-- Agrega tantos como quieras, posicionándolos con porcentajes diferentes -->
+
+    <div class="name-tag">Eres la niña mas hermosa que mis ojos han visto A❤️A</div>
+
     <script src="main.js"></script>
   </body>
 </html>
